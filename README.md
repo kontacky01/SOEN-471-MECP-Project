@@ -1,10 +1,10 @@
 # SOEN-471-MECP-Project <br>
-<b> Contributors <br>
+<b> Contributors </b> <br>
 Peilin Han <br>
 Carmen Pop <br>
 Kalinga Swain <br>
 Natasha Uwase <br>
-Project Summary
+<b> Project Summary </b> <br>
 This project aims to address various challenges in the domain of SKU analysis and product matching, utilizing a combination of traditional methods and machine learning techniques. We speculate that the dataset comprises product information extracted from files such as mecp_scraper.py and life_supply.py, featuring fields including product name, description, SKU, and price, likely represented as string and float data types. The dataset's size remains undisclosed at this stage.
 Research Objectives:
 1.	Comparing and Matching MECP SKUs with Competitors' SKUs:

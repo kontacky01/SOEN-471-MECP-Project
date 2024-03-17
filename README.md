@@ -1,7 +1,7 @@
 # SOEN-471-MECP-Project <br>
 <b> Contributors </b> <br>
-Peilin Han, Carmen Pop, Kalinga Swain, Natasha Uwase <br>
-<b> Project Summary </b> <br><br>
+Peilin Han, Carmen Pop, Kalinga Swain, Natasha Uwase <br><br>
+<b>                                Project Summary </b> <br><br>
 Introduction<br>
 This collaborative project with MECP, a company specializing in medical equipment sales, aims to tackle challenges in SKU analysis and product matching using a blend of traditional methods and innovative techniques. The dataset, sourced from files like mecp_scraper.py and life_supply.py, likely includes product information such as name, description, SKU, and price, represented as string and float data types. While the dataset's size remains undisclosed, our focus lies in resolving the research objective of Matching MECP SKUs with Competitors' SKUs, a critical task for inventory management, pricing strategy, and market analysis.<br><br>
 Methodology<br>

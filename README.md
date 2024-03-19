@@ -1,12 +1,16 @@
 # SOEN-471-MECP-Project <br>
 <b> Contributors </b> <br>
 Peilin Han, Carmen Pop, Kalinga Swain, Natasha Uwase <br><br>
-<b>                                Project Summary </b> <br><br>
-Introduction<br>
-This collaborative project with MECP, a company specializing in medical equipment sales, aims to tackle challenges in SKU analysis and product matching using a blend of traditional methods and innovative techniques. The dataset, sourced from files like mecp_scraper.py and life_supply.py, likely includes product information such as name, description, SKU, and price, represented as string and float data types. While the dataset's size remains undisclosed, our focus lies in resolving the research objective of Matching MECP SKUs with Competitors' SKUs, a critical task for inventory management, pricing strategy, and market analysis.<br><br>
-Methodology<br>
-To achieve this objective, we propose a comprehensive approach involving SKU comparison between MECP and its competitors. Leveraging big data analytics, our methodology will combine the Levenshtein distance calculation, early termination, parallelization, and min hashing for efficient and accurate SKU comparison. The Levenshtein distance metric quantifies dissimilarity between SKU datasets. With early termination techniques we can conserve computational resources by halting computation beyond a predefined threshold. Also, we plan to use parallelization to distribute workload across multiple processors, expediting distance computation.<br><br>
-Post distance calculation, we will use min hashing to identify matching or similar SKUs efficiently. With a time complexity of O(N+M), where N is the size of MECP's dataset and M is the size of the competitor's dataset, min hashing offers scalability. This hashing technique generates fixed-size signatures for SKUs, facilitating rapid comparison across large datasets.<br><br>
-Results<br>
-To assess SKU matching accuracy, we will employ a rigorous evaluation framework, including precision, recall, and F1 score, comparing identified matches against ground truth data. Cross-validation experiments ensure algorithm robustness across diverse datasets and scenarios.<br><br>
-In conclusion, our project presents a comprehensive approach to SKU comparison, crucial for MECP's competitive edge. By integrating Levenshtein distance, early termination, parallelization, and min hashing, we aim to provide MECP with actionable insights into its product landscape compared to competitors. This methodology not only scales to handle MECP's vast dataset but also ensures high accuracy in SKU matching, empowering informed decision-making in the consumer electronics market.
+<b>Project Summary </b> <br><br>
+Introduction:<br>
+This collaborative project with MECP, a company specializing in medical equipment sales, aims to tackle challenges in SKU analysis and product matching. The datasets are from MECP and 3 other competitors, C6, LifeSupply, and MedicalWarehouse. Each table has product name, price, SKU, and the description of the product, represented as string and float data types. Our primary goal is to address the research objective of matching MECP SKUs with those of competitors, with a particular emphasis on enhancing the efficiency and scalability of the matching process.<br><br>
+Approach:<br>
+1.	Data Preprocessing: The initial step will entail preprocessing product information datasets by standardizing attributes like product names, descriptions, and SKUs, while also eliminating inconsistencies and irrelevant data.<br>
+2.	Tokenization and Shingling: Next, we will tokenize the product descriptions into shingles. This step facilitates the generation of a compact representation of the product attributes for efficient comparison.<br>
+3.	MinHash Signature Construction: We will then use MinHashing to construct signatures for each product based on its shingles. Multiple hash functions might be applied to generate a set of minimum hash values, forming the MinHash signature. This process reduces the dimensionality of the data while preserving similarity information.<br>
+4.	Similarity Estimation: We will use MinHash signatures to estimate Jaccard similarity between product pairs, indicating attribute similarity. A threshold on Jaccard similarity scores determines potential matches.<br>
+5.	Thresholding and Validation: Additionally, validation techniques such as manual inspection or ground truth datasets will be used to evaluate the accuracy of the matching algorithm.<br><br>
+Expected Outcomes:<br>
+•	Development of a scalable and efficient SKU matching system capable of handling large datasets.<br>
+•	Improved accuracy in identifying matching products across different datasets, leading to enhanced inventory management and operational efficiency.<br>
+•	Reduction in manual effort required for product matching, allowing for more streamlined business processes.<br>
